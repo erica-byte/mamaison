@@ -15,28 +15,16 @@ class ListeLogement extends React.Component {
 liste:this.props.elem,
       
     }
-    }
-    DeleteItem=(id,e)=>{
-        //https://mamaison.arenaplaza.site/api/Room/UpdatedRoomModel/
-
     
-        axios.delete(`https://mamaison.arenaplaza.site/api/Room/`+id)  
-        .then(res => {  
-          console.log(res);  
-          console.log(res.data);  
-      
-          const posts = this.state.liste.filter(item => item.id !== id);  
-          this.setState({ liste:posts });  
-        })
-        e.preventDefault()  
-      } 
+    }
+    
     
              
-       
+ //   <h1 onClick={()=>this.props.deleteitem(5)}>jjkjjjj</h1>
     render(){
         const iconSize = 30;
         const{ liste }=this.state
-        console.log(this.state.liste);
+        console.log(liste)
         return (<div className='total'>
             <div>
            
@@ -53,7 +41,7 @@ liste:this.props.elem,
                                {(liste.etat==="disponible"&& <button>disponible</button> )|| (liste.etat==="occupe" && <button>occupe</button>)}
                                </ul>
                               
-                               <span className="delete-button" onClick={(e) => (this.DeleteItem(liste.id,e))}>
+                               <span className="delete-button" onClick={() => (this.props.deleteitem(liste.id))}>
                       <MdDelete></MdDelete>
                   </span>
                   <Link to={"/LogementModifier/"+liste.id}>

@@ -23,6 +23,7 @@ class LogementTotal extends React.Component {
            .then(res => {
                const total=res.data.length;
              const persons = res.data.slice(total-20,total);
+             
              console.log(persons)
 
              //in traite la reponde obtenue
@@ -41,7 +42,23 @@ handleSelectChange = e => {
               logPerPage: e.target.value,
               currentPage: 1
             });
-            };         
+            }
+
+         DeleteItem = (id)=>{
+              //https://mamaison.arenaplaza.site/api/Room/UpdatedRoomModel/
+            console.log(id);
+          
+              //  axios.delete(`https://mamaison.arenaplaza.site/api/Room/`+id)  
+              //  .then(res => {  
+               
+              //    console.log(res.data);  
+              //  })
+                 const posts = this.state.elem.filter(item => item.id !== id);  
+                 console.log(posts) 
+                 this.setState({ elem:posts }); 
+               // console.log(this.state.elem) 
+              
+            }         
 
     render (){
         const {
@@ -54,7 +71,7 @@ handleSelectChange = e => {
             const indexFirstLog = indexLastLog - logPerPage;
       //on extrait certaine valeurs du tableau elem
        const log= elem.slice(indexFirstLog,indexLastLog);
-       console.log(this.props)
+      // console.log(this.props)
         return(
             <div>
                 <h1>welcome et bonjour a tous </h1><h3>trouvez vous un logement a toux prix </h3>
@@ -65,7 +82,7 @@ handleSelectChange = e => {
                 
                  {elem.map((data) => {
    //             return (<Logement  elem = {data} isFavoriteLog={this.props.favoritesLog.findIndex(item=>item.id===data.id)!==-1} />
-return(<ListeLogement elem={data}/>
+return(<ListeLogement elem={data} deleteitem={this.DeleteItem }/>
                 )
             } )} 
              </div>  

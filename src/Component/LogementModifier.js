@@ -56,7 +56,7 @@ class LogementModifier extends React.Component {
       });
       e.preventDefault();
     } else {
-      console.log(this.state.logM)
+     // console.log(this.state.logM)
       let logtmp = this.state.logM
       logtmp[e.target.name] = e.target.value
 
@@ -99,7 +99,8 @@ axios.post(`https://api.cloudinary.com/v1_1/erica/image/upload`, formData)
       console.log(tmploge)
       this.setState({
         logM: tmploge,})
-        this.addRoom(this.state.logM.id)
+        console.log(this.state.logM)
+        this.updateRoom(this.state.logM)
       
           }).catch(erreur =>{
             //On traite ici les erreurs éventuellement survenues
@@ -109,10 +110,10 @@ axios.post(`https://api.cloudinary.com/v1_1/erica/image/upload`, formData)
         e.preventDefault() 
   }
 
-    addRoom(id){
-      console.log(id)
+     updateRoom(logM){
+      
 
-    axios.put(`https://mamaison.arenaplaza.site/api/Room/UpdatedRoomModel/`, {id})
+    axios.put(`https://mamaison.arenaplaza.site/api/Room/UpdatedRoomModel/`+logM)
       .then(res => {
         console.log(res)
         console.log(res.data);
@@ -125,7 +126,7 @@ axios.post(`https://api.cloudinary.com/v1_1/erica/image/upload`, formData)
       })
       
   
-}
+} 
 
   render() {
 
