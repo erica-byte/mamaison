@@ -1,0 +1,22 @@
+.loge{
+    border: 3px rgb(32, 70, 92) outset;
+    width: 300px;
+    height: 300px;
+    
+}
+.total{
+    display: inline-flex;}
+.Logement-sell{ 
+        background: linear-gradient(to right, transparent, rgb(247, 186, 181));
+    
+}
+.image{
+height: 100px;
+}
+li {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    color: black;
+    display : list-item;
+    
+   } 

@@ -1,0 +1,47 @@
+input {
+    min-width:300px;
+	border: 1px black dimgrey;
+	border-radius: 5px;
+    margin: auto;
+    background-color: transparent;
+}
+div{
+
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+form {
+ 
+    border: 1px rgb(161, 152, 152) inset;
+margin: 0px;
+width: 370px;
+background: linear-gradient(to left, transparent, rgb(187, 177, 175)),
+url("https://res.cloudinary.com/erica/image/fetch/h_400/https://res.cloudinary.com/erica/image/upload/v1618570125/maison6_bmcbow.jpg");
+border-right: 2px solid rgb(226, 42, 42);
+
+}
+.container{
+    display: inline-flex;
+    clear: both;
+    background-color: rgb(235, 204, 147);
+    margin-left: 300px;
+}
+.imagefont{
+    background-image: url("maison3.jpg");
+    width: 400px;
+    height: 520px;
+    grid-template-columns: auto;
+}
+legend{
+    font-style: italic;
+    font-size: 30px;
+}
+label
+{
+    font-style: italic;
+}
+.envoi{
+    background-color:rgb(190, 137, 57);
+    font-size: 20px;
+}

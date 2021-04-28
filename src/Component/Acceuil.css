@@ -1,0 +1,12 @@
+.vue{
+    display: inline-flex;
+    background: linear-gradient(to right, transparent, rgb(248, 237, 236)),
+    url("https://res.cloudinary.com/erica/image/fetch/h_400/https://res.cloudinary.com/erica/image/upload/v1618574308/maison7_f9r9dz.jpg");
+    margin: 100px;
+}
+button{
+    border: 3px white ridge;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+    text-decoration: rgb(189, 128, 15);
+}

@@ -1,0 +1,43 @@
+.element1{
+
+    display: inline-block;
+	width:400px;
+    height: 450px;
+	border: 3px black solid;
+	border-radius: 5px;
+    margin: 10px;
+    background-color: ghostwhite;
+}
+
+.Logement-sell{
+    background: linear-gradient(to right, transparent, rgb(248, 237, 236)),
+url("https://res.cloudinary.com/erica/image/fetch/h_400/https://res.cloudinary.com/erica/image/upload/v1618574308/maison7_f9r9dz.jpg");
+}
+button,select{
+    border-width: 1px solid;
+    margin-left: 10px;
+    border-radius: 5px;
+    
+    
+    
+}
+.col-2{
+    border: 1px black solid;
+}
+label{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+h1,h3,.type{
+    
+    text-decoration: blink;
+    text-align: center;
+    background-color: rgb(160, 120, 35);
+}
+.icone{
+    margin-left: 300px;
+    
+
+}
+

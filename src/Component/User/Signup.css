@@ -1,0 +1,15 @@
+.sign {
+ 
+    border: 1px rgb(223, 108, 108) inset;
+margin: 100px;
+width: 370px;
+background: linear-gradient(to left, transparent, rgb(228, 235, 235)),
+url("https://res.cloudinary.com/erica/image/fetch/h_600/https://res.cloudinary.com/erica/image/upload/v1618999968/krzclrilusvvpwyooikk.jpg");
+border-right: 2px solid rgb(226, 42, 42);
+
+}
+.sub{
+    margin:10px;
+    border: 3px rgb(68, 50, 50) solid;
+    font-size: 20px;
+}
