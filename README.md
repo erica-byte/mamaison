@@ -1,2 +1,7 @@
 # mamaison
-ici on essaie d ,jouter ce quia ete pousse vers le depot depuis que on l'a clone
+ce code  est celui d'un <strong>site de logement</strong> avec les fonctionnalite d ajouter et de mettre a jour les differents types de logement.
+
+## Pre-requisites
+### [React JS]
+npx create-react-app mamaison
+
